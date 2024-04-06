@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import 'reset.css';
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.course-primary {
+    margin-top: 75px;
+    width: 700px;
+    height: auto;
+}
+
+.course-primary .course-rate {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.course-primary .course-rate .rate-star {
+    color: #EC7070;
+}
+
+.course-primary .course-rate p {
+    color: rgba(0, 0, 0, 0.40);
+}
+
+.course-primary .course-info {
+    padding: 0 5px;
+}
+
+.course-primary .course-info h1 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.course-primary .course-info .course-dsc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-primary .course-form {
+    padding: 20px 0 14px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    color: black;
+    width: 700px;
+    border-bottom: 2px solid #000;
+}
+
+.course-detail-top {
+    padding: 20px 0 20px 0;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+p {
+    padding: 10px 0 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-detail-top span {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-detail-bottom ul li {
+    width: 700px;
+    line-height: normal;
+}
+
+
+.course-leasson {
+    padding: 20px 0;
+    max-width: 700px;
+}
+
+
+#accordion {
+    margin: 10px auto;
+    width: 700px;
+}
+
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#accordion li label {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #F1F8FF;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+}
+
+#accordion li label span {
+    transform: rotate(90deg);
+    font-size: 16px;
+    color: #000;
+}
+
+#accordion label+input[type="radio"] {
+    display: none;
+}
+
+#accordion .content {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    line-height: 26px;
+    max-width: 700px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion .content .content-lesson {
+    margin-left: 20px;
+}
+
+#accordion .content .content-time {
+    margin-left: 160px;
+}
+
+#accordion label+input[type="radio"]:checked+.content {
+    max-height: 400px;
+}
+
+.course-second {
+    max-width: 380px;
+    height: auto;
+    position: fixed;
+    top: 75px;
+    right: 140px;
+}
+
+.course-second .course-second-top {
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: #F1F8FF;
+    padding: 30px 50px;
+}
+
+.course-second .course-second-top h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+.progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+
+.course-second .course-second-bottom {
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    padding: 0px 50px;
+}
+
+.course-second .course-second-bottom li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.course-second .course-second-bottom li i {
+    margin-right: 10px;
+}
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    width: 280px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    transition: 0.3s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn .btn-primary {
+    color: #fff;
+    background-color: #4D57DD;
+}

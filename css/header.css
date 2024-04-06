@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "reset.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    max-width: 1790px;
+}
+html {
+    font-size: 22px;
+}
+
+
+section {
+    font-family: "Nunito", sans-serif;
+    width: 1390px;
+    max-width: calc(100%-200px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section nav {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 200px;
+    cursor: pointer;
+    margin: 7px 0; 
+}
+section nav .search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+section nav .search i {
+    width: 26px;
+    margin: 0px 7px;
+}
+
+section nav .search input {
+    font-size: 22px;
+    color: #000;
+    margin-left: 0 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+
+section nav ul {
+    list-style: none;
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 0 42px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 25px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #4D57DD;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after {
+    width: 50%;
+}
+
+section nav ul li a:hover {
+    color: #4D57DD;
+}
+
+section nav .account {
+    width: 60px;
+}
