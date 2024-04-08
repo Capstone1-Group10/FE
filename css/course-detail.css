@@ -1,42 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import 'reset.css';
+@import 'global.css';
 
-body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-}
-
-a {
-    text-decoration: none;
-}
-
-.wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.course-detail-main {
+    margin: 75px 0;
     display: flex;
-    justify-content: space-between;
-}
-
-ul {
-    list-style-type: none;
+    gap: 80px;
 }
 
 .course-primary {
-    margin-top: 75px;
     width: 700px;
     height: auto;
 }
 
 .course-primary .course-rate {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
 }
 
@@ -64,17 +42,45 @@ ul {
     line-height: normal;
 }
 
-.course-primary .course-form {
-    padding: 20px 0 14px 0px;
+.course-form {
     display: flex;
-    justify-content: center;
-    gap: 14px;
-    color: black;
-    width: 700px;
-    border-bottom: 2px solid #000;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin-top: 10px;
 }
 
-.course-detail-top {
+.course-label {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.course-radio {
+    display: none;
+}
+
+.course-radio:checked+.course-label {
+    font-weight: 600;
+    color: #4D57DD;
+    border-bottom: 1px solid #4D57DD;
+    transition: all 0.4s ease;
+
+}
+
+.course-radio:checked+.course-label+.course-content {
+    display: initial;
+}
+
+.course-content {
+    order: 1;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    line-height: 1.5;
+    font-size: 16px;
+    display: none;
+}
+
+
+.course-detail-1 {
     padding: 20px 0 20px 0;
 }
 
@@ -91,123 +97,156 @@ p {
     line-height: normal;
 }
 
-.course-detail-top span {
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
+#ch {
+    display: none;
 }
 
-.course-detail-bottom ul li {
+#ch:checked~.course-content-show {
+    display: block;
+
+}
+
+#ch:checked~label {
+    display: none;
+}
+
+.course-detail-1 label {
+    display: inline-block;
+    cursor: pointer;
+    font-style: italic;
+    color: #4D57DD;
+
+}
+
+.course-content-show {
+    display: none;
+}
+
+.course-detail-2 ul li {
     width: 700px;
     line-height: normal;
+    margin-top: 10px;
+    margin-left: 18px;
+    list-style-type: disc;
 }
 
 
 .course-leasson {
-    padding: 20px 0;
+    padding: 20px 0px;
     max-width: 700px;
 }
 
-
-#accordion {
-    margin: 10px auto;
-    width: 700px;
-}
-
-#accordion li {
-    list-style: none;
-    width: 100%;
-    margin-bottom: 10px;
-    background: #fff;
-    border-radius: 5px;
-}
-
-#accordion li label {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
+.accordion-menu-lesson {
+    max-width: 700px;
+    height: auto;
     background: #F1F8FF;
-    color: #000;
     border-radius: 10px;
-    border: 1px solid #D9D9D9;
+    border: 2px solid #D9D9D9;
+    overflow: hidden;
+    margin: 10px 0;
 }
 
-#accordion li label span {
-    transform: rotate(90deg);
-    font-size: 16px;
+.accordion-menu-lesson li:last-child .course-dropdown {
+    border-bottom: 0;
+}
+
+.course-dropdown {
+    cursor: pointer;
+    display: block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 600;
     color: #000;
+    position: relative;
+    transition: all 0.3s ease-out;
 }
 
-#accordion label+input[type="radio"] {
+.course-dropdown:hover {
+    background: #4D57DD;
+    color: #fff;
+}
+
+.course-dropdown .fa-chevron-down {
+    position: absolute;
+    right: 30px;
+    left: auto;
+}
+.submenuItems {
+    border-top: 2px solid #D9D9D9;
     display: none;
+    background: #fff;
+    /* transition: all 2s ease-in-out; */
 }
 
-#accordion .content {
+.submenuItems li .time{
+    display: flex;
+    margin-left: 270px;
+}
+
+.submenuItems a:hover {
+    background: #F1F8FF;
+  }
+
+.accordion-menu-lesson li.active .submenuItems {
+    display: block;
+}
+.accordion-menu-lesson a {
     display: flex;
     align-items: center;
-    padding: 0 30px;
-    line-height: 26px;
-    max-width: 700px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;
+    color: #000;
+    font-weight: 400;
+    padding: 5px 20px;
+    transition: all .2s ease-in-out;
+    gap: 20px;
+}
+.accordion-menu-lesson li:last-child .course-dropdown{
+    border-bottom: 0;
+}
+.accordion-menu-lesson li.active .course-dropdown .fa-chevron-down{
+    transform: rotate(180deg);
 }
 
-#accordion .content .content-lesson {
-    margin-left: 20px;
-}
 
-#accordion .content .content-time {
-    margin-left: 160px;
-}
-
-#accordion label+input[type="radio"]:checked+.content {
-    max-height: 400px;
-}
 
 .course-second {
     max-width: 380px;
-    height: auto;
-    position: fixed;
-    top: 75px;
-    right: 140px;
-}
-
-.course-second .course-second-top {
+    height: 460px;
+    border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.30);
-    background: #F1F8FF;
-    padding: 30px 50px;
 }
 
-.course-second .course-second-top h2 {
-    font-size: 35px;
-    font-weight: 700;
+.course-second .course-second-1 {
+    background: #F1F8FF;
+    border-radius: 10px 10px 0 0;
+    padding: 30px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);;
 }
+
+.course-second .course-second-1 h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
 .progress {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #000;
 }
-
-.course-second .course-second-bottom {
-    border: 1px solid rgba(0, 0, 0, 0.30);
-    padding: 0px 50px;
+.course-second .course-second-2 {
+    padding: 10px 50px;
 }
 
-.course-second .course-second-bottom li {
+.course-second .course-second-2 li {
     display: flex;
     align-items: center;
-    gap: 10px;
+
 }
-.course-second .course-second-bottom li i {
+
+.course-second .course-second-2 li i {
     margin-right: 10px;
 }
+
 .btn {
     display: inline-flex;
     justify-content: center;
@@ -230,4 +269,9 @@ p {
 .btn .btn-primary {
     color: #fff;
     background-color: #4D57DD;
+}
+.btn .btn-primary:hover {
+    color: #4D57DD;
+    background: #fff;
+    border: 1px solid #4D57DD;
 }

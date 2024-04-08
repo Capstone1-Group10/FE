@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>ELEANIFY</title>
 </head>
 
@@ -17,7 +20,7 @@
         <header class="header">
             <div class="container">
                 <div class="header-main">
-                    <img srcset="./image/logo2.png 2x" alt="">
+                    <img src="./image/logo2.png" alt="">
                     <div class="header-search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="search" class="header-search-input" placeholder="Tìm kiếm">
@@ -63,89 +66,105 @@
                             </div>
                         </div>
                         <div class="banner-image">
-                            <img src="./image/banner-image.png" alt="">
+                            <img src="./image/banner-home.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
             <section class="category">
                 <div class="container">
-                    <p class="section-subtitle">CHUYÊN ĐỀ</p>
-                    <h2 class="h2 section-title">
-                        Tin Học Văn Phòng
-                    </h2>
-                    <ul class="grid-list">
-                        <li>
-                            <div class="category-card" style="--color: #ECF5FD">
-                                <div class="card-icon">
-                                    <img src="./image/Frame 169.png" width="80" height="80" alt="">
+                    <div class="category-main">
+                        <p class="section-subtitle">CHUYÊN ĐỀ</p>
+                        <h2 class="h2 section-title">
+                            Tin Học Văn Phòng
+                        </h2>
+                        <ul class="grid-list">
+                            <li>
+                                <div class="category-card" style="--color: #ECF5FD">
+                                    <div class="card-icon">
+                                        <img src="./image/word.png" width="80" height="80" alt="">
+                                    </div>
+                                    <h3 class="h3">
+                                        Word
+                                    </h3>
+                                    <p class="card-text">
+                                        Đánh giá kỹ năng soạn thảo văn bản, định dạng, bố cục, và các tính năng nâng
+                                        cao.
+                                    </p>
+                                    <a href="#" class="card-badge" style="--color-bg: #D1E3FF; --color-text: #1E82DD">4
+                                        Khóa Học</a>
                                 </div>
-                                <h3 class="h3">
-                                    Word
-                                </h3>
-                                <p class="card-text">
-                                    Đánh giá kỹ năng soạn thảo văn bản, định dạng, bố cục, và các tính năng nâng cao.
-                                </p>
-                                <span class="card-badge word">4 Khóa Học</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="category-card" style="--color: #E9F8F6">
-                                <div class="card-icon">
-                                    <img src="./image/Frame 173.png" width="80" height="80" alt="">
+                            </li>
+                            <li>
+                                <div class="category-card" style="--color: #E9F8F6">
+                                    <div class="card-icon">
+                                        <img src="./image/excel.png" width="80" height="80" alt="">
+                                    </div>
+                                    <h3 class="h3">
+                                        Excel
+                                    </h3>
+                                    <p class="card-text">
+                                        Đánh giá khả năng tạo bảng tính, thực hiện phép tính, phân tích dữ liệu, và tạo
+                                        biểu
+                                        đồ.
+                                    </p>
+                                    <a href="#" class="card-badge" style="--color-bg: #CFF1E0; --color-text: #0C7C42">4
+                                        Khóa Học</a>
                                 </div>
-                                <h3 class="h3">
-                                    Excel
-                                </h3>
-                                <p class="card-text">
-                                    Đánh giá khả năng tạo bảng tính, thực hiện phép tính, phân tích dữ liệu, và tạo biểu đồ.
-                                </p>
-                                <span class="card-badge excel">4 Khóa Học</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="category-card" style="--color: #FFF1E7">
-                                <div class="card-icon">
-                                    <img src="./image/Frame 176.png" width="80" height="80" alt="">
+                            </li>
+                            <li>
+                                <div class="category-card" style="--color: #FFF1E7">
+                                    <div class="card-icon">
+                                        <img src="./image/ppt.png" width="80" height="80" alt="">
+                                    </div>
+                                    <h3 class="h3">
+                                        PowerPoint
+                                    </h3>
+                                    <p class="card-text">
+                                        Đánh giá kỹ năng thiết kế ấn tượng, sử dụng hình ảnh, hiệu ứng, và trình bày
+                                        hiệu
+                                        quả.
+                                    </p>
+                                    <a href="#" class="card-badge" style="--color-bg: #FFE4D1; --color-text: #F0633C">4
+                                        Khóa Học</a>
                                 </div>
-                                <h3 class="h3">
-                                    PowerPoint
-                                </h3>
-                                <p class="card-text">
-                                    Đánh giá kỹ năng thiết kế ấn tượng, sử dụng hình ảnh, hiệu ứng, và trình bày hiệu quả.
-                                </p>
-                                <span class="card-badge ppt">4 Khóa Học</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="category-card" style="--color: #FFEBF1">
-                                <div class="card-icon">
-                                    <img src="./image/Frame 177.png" width="80" height="80" alt="">
+                            </li>
+                            <li>
+                                <div class="category-card" style="--color: #FFEBF1">
+                                    <div class="card-icon">
+                                        <img src="./image/access.png" width="80" height="80" alt="">
+                                    </div>
+                                    <h3 class="h3">
+                                        Access
+                                    </h3>
+                                    <p class="card-text">
+                                        Đánh giá khả năng tạo và quản lý cơ sở dữ liệu, truy vấn dữ liệu, và thiết kế
+                                        báo
+                                        cáo.
+                                    </p>
+                                    <a href="#" class="card-badge" style="--color-bg: #FFDBE2; --color-text: #A03538">4
+                                        Khóa Học</a>
                                 </div>
-                                <h3 class="h3">
-                                    Access
-                                </h3>
-                                <p class="card-text">
-                                    Đánh giá khả năng tạo và quản lý cơ sở dữ liệu, truy vấn dữ liệu, và thiết kế báo cáo.
-                                </p>
-                                <span class="card-badge access">4 Khóa Học</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="category-card" style="--color: #ECF5FD">
-                                <div class="card-icon">
-                                    <img src="./image/Frame 178.png" width="80" height="80" alt="">
+                            </li>
+                            <li>
+                                <div class="category-card" style="--color: #ECF5FD">
+                                    <div class="card-icon">
+                                        <img src="./image/outlook.png" width="80" height="80" alt="">
+                                    </div>
+                                    <h3 class="h3">
+                                        Outlook
+                                    </h3>
+                                    <p class="card-text">
+                                        Đánh giá kỹ năng quản lý email, lịch trình, danh bạ, và cộng tác trong môi
+                                        trường
+                                        Microsoft Office.
+                                    </p>
+                                    <a href="#" class="card-badge" style="--color-bg: #D1E3FF; --color-text: #1E82DD">4
+                                        Khóa Học</a>
                                 </div>
-                                <h3 class="h3">
-                                    Outlook
-                                </h3>
-                                <p class="card-text">
-                                    Đánh giá kỹ năng quản lý email, lịch trình, danh bạ, và cộng tác trong môi trường Microsoft Office.
-                                </p>
-                                <span class="card-badge outlook">4 Khóa Học</span>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section class="state">
@@ -199,108 +218,110 @@
             </section>
             <section class="course-popular">
                 <div class="container">
-                    <p class="section-subtitle">KHÓA HỌC PHỔ BIẾN</p>
-                    <h2 class="h2 section-title">
-                        Chọn một khóa học để bắt đầu
-                    </h2>
-                    <ul class="course-list">
-                        <li>
-                            <img src="./image/image 15.png" alt="">
-                            <div class="course-info">
-                                <span class="level">Co ban</span>
-                                <h3>Excel từ cơ bản đến nâng cao</h3>
-                                <div class="course-rate">
-                                    <div class="rate-star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
+                    <div class="course-popular-main">
+                        <p class="section-subtitle">KHÓA HỌC PHỔ BIẾN</p>
+                        <h2 class="h2 section-title">
+                            Chọn một khóa học để bắt đầu
+                        </h2>
+                        <ul class="course-list">
+                            <li>
+                                <img src="./image/image 15.png" alt="">
+                                <div class="course-info">
+                                    <span class="level">Cơ Bản</span>
+                                    <h3>Excel từ cơ bản đến nâng cao</h3>
+                                    <div class="course-rate">
+                                        <div class="rate-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>(4.5/34 Đánh giá)</p>
                                     </div>
-                                    <p>(4.5/34 Đánh giá)</p>
-                                </div>
-                                <div class="course-price">
-                                    <span>Miễn phí</span>
-                                </div>
-                                <div class="course-time">
-                                    <div class="lesson">
-                                        <i class="fa-regular fa-bookmark"></i>
-                                        <span>15 bài giảng</span>
+                                    <div class="course-price">
+                                        <span>Miễn phí</span>
                                     </div>
-                                    <div class="time">
-                                        <i class="fa-regular fa-clock"></i>
-                                        <span>5 giờ 13 phút</span>
+                                    <div class="course-time">
+                                        <div class="lesson">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                            <span>15 bài giảng</span>
+                                        </div>
+                                        <div class="time">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <span>5 giờ 13 phút</span>
+                                        </div>
                                     </div>
                                 </div>
+                            </li>
+                            <li>
+                                <img src="./image/image 17.png" alt="">
+                                <div class="course-info">
+                                    <span class="level">Cơ Bản</span>
+                                    <h3>Excel từ cơ bản đến nâng cao</h3>
+                                    <div class="course-rate">
+                                        <div class="rate-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>(4.5/34 Đánh giá)</p>
+                                    </div>
+                                    <div class="course-price">
+                                        <span>Miễn phí</span>
+                                    </div>
+                                    <div class="course-time">
+                                        <div class="lesson">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                            <span>15 bài giảng</span>
+                                        </div>
+                                        <div class="time">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <span>5 giờ 13 phút</span>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./image/image 15.png" alt="">
+                                <div class="course-info">
+                                    <span class="level">Cơ Bản</span>
+                                    <h3>Excel từ cơ bản đến nâng cao</h3>
+                                    <div class="course-rate">
+                                        <div class="rate-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>(4.5/34 Đánh giá)</p>
+                                    </div>
+                                    <div class="course-price">
+                                        <span>Miễn phí</span>
+                                    </div>
+                                    <div class="course-time">
+                                        <div class="lesson">
+                                            <i class="fa-regular fa-bookmark"></i>
+                                            <span>15 bài giảng</span>
+                                        </div>
+                                        <div class="time">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <span>5 giờ 13 phút</span>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn">
+                            <div class="btn btn-secondary">
+                                <span>Xem thêm</span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
-                        </li>
-                        <li>
-                            <img src="./image/image 15.png" alt="">
-                            <div class="course-info">
-                                <span>Co ban</span>
-                                <h3>Excel từ cơ bản đến nâng cao</h3>
-                                <div class="course-rate">
-                                    <div class="rate-star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p>(4.5/34 Đánh giá)</p>
-                                </div>
-                                <div class="course-price">
-                                    <span>Miễn phí</span>
-                                </div>
-                                <div class="course-time">
-                                    <div class="lesson">
-                                        <i class="fa-light fa-book"></i>
-                                        <span>15 bài giảng</span>
-                                    </div>
-                                    <div class="time">
-                                        <i class="fa-regular fa-clock"></i>
-                                        <span>5 giờ 13 phút</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </li>
-                        <li>
-                            <img src="./image/image 15.png" alt="">
-                            <div class="course-info">
-                                <span>Co ban</span>
-                                <h3>Excel từ cơ bản đến nâng cao</h3>
-                                <div class="course-rate">
-                                    <div class="rate-star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p>(4.5/34 Đánh giá)</p>
-                                </div>
-                                <div class="course-price">
-                                    <span>Miễn phí</span>
-                                </div>
-                                <div class="course-time">
-                                    <div class="lesson">
-                                        <i class="fa-light fa-book"></i>
-                                        <span>15 bài giảng</span>
-                                    </div>
-                                    <div class="time">
-                                        <i class="fa-regular fa-clock"></i>
-                                        <span>5 giờ 13 phút</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="btn">
-                        <div class="btn btn-secondary">
-                            <span>Xem thêm</span>
-                            <i class="fa-solid fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
@@ -309,50 +330,38 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-main">
-                    <div class="footer-left">
-                        <div class="footer-logo">
-                            <img src="./image/Frame 210.png" alt="">
-                        </div>
-                        <div class="footer-media">
-                            <img src="./image/Frame 211.png" alt="">
-                            <img src="./image/Frame 212.png" alt="">
-                            <img src="./image/Frame 213.png" alt="">
+                    <div class="footer-col">
+                        <img src="./image/logofooter.png" alt="">
+                        <div class="social-link">
+                            <a href="#"><i class="fa-brands fa-google"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
                         </div>
                     </div>
-                    <div class="footer-center">
+                    <div class="footer-col">
+                        <h4>Về chúng tôi</h4>
                         <ul>
-                            <li>
-                                <h3>VỀ CHÚNG TÔI</h3>
-                            </li>
-                            <li>
-                                <a href="#">Giới thiệu</a>
-                            </li>
-                            <li>
-                                <a href="#">Liên hệ</a>
-                            </li>
-                            <li>
-                                <a href="#">Điều khoản</a>
-                            </li>
-                            <li>
-                                <a href="#">Bảo mật</a>
-                            </li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Điều khoản</a></li>
+                            <li><a href="#">Bảo mật</a></li>
                         </ul>
                     </div>
-                    <div class="footer-right">
-                        <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
-                        <div class="phone">
-                            <i class="fa-solid fa-phone"></i>
-                            <p>+123 456 789</p>
-                        </div>
-                        <div class="email">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>elearnify@gmail.com</p>
-                        </div>
-                        <div class="address">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Số nhà 123, đường xyz, phường Hòa Khánh Nam, quận Liên Chiểu, thành phố Đà Nẵng</p>
-                        </div>
-    
+                    <div class="footer-col">
+                        <h4>Liên hệ với chúng tôi</h4>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+123.456.789</span>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>elearnify@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Số nhà 123, đường xyz, phường Hòa Khánh Nam, quận Liên Chiểu, thành phố Đà Nẵng.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

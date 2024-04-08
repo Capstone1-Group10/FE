@@ -1,100 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import "reset.css";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
-    max-width: 1790px;
-}
-html {
-    font-size: 22px;
-}
-
-
-section {
-    font-family: "Nunito", sans-serif;
-    width: 1390px;
-    max-width: calc(100%-200px);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-section nav {
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    right: 0;
-    left: 0;
-    background: 0px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+@import url("./reset.css");
+@import url("./global.css");
+@import url("./variables.css");
+.header {
+    padding: 10px 0 10px 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: var(--white);
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    position: relative;
     z-index: 1000;
+    width: 100%;
 }
 
-section nav .logo img{
-    width: 200px;
-    cursor: pointer;
-    margin: 7px 0; 
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-section nav .search {
+
+.header-main img {
+    width: 180px;
+    height: 50px;
+}
+
+.header-search {
     width: max-content;
     display: flex;
     align-items: center;
-    padding: 7px;
-    border: 2px solid #000;
+    width: 260px;
+    height: 35px;
+    border: 2px solid var(--gray);
     border-radius: 10px;
 }
-section nav .search i {
-    width: 26px;
-    margin: 0px 7px;
+
+.header-search i {
+    width: 15px;
+    margin: 0px 10px;
+    color: var(--gray);
 }
 
-section nav .search input {
-    font-size: 22px;
-    color: #000;
+.header-search .header-search-input {
+    font-size: 16px;
     margin-left: 0 15px;
     outline: none;
     border: none;
     background: transparent;
 }
 
-
-section nav ul {
-    list-style: none;
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
 }
 
-section nav ul li {
-    display: inline-block;
-    margin: 0 42px;
-}
-
-section nav ul li a {
-    text-decoration: none;
-    color: #000;
+.menu-link {
+    color: inherit;
     font-weight: 600;
-    font-size: 25px;
-    transition: 0.1s;
 }
 
-section nav ul li a::after {
+.menu-link::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: #4D57DD;
+    background: var(--blue-darkest);
     display: block;
-    transition: 0.2s linear;
+    transition: 0.3s linear;
 }
 
-section nav ul li a:hover::after {
-    width: 50%;
+.menu-link:hover::after {
+    width: 100%;
 }
 
-section nav ul li a:hover {
-    color: #4D57DD;
+.menu-link:hover {
+    color: var(--blue-darkest);
 }
 
-section nav .account {
-    width: 60px;
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    height: 35px;
+    padding: 0 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    transition: 0.3s;
+}
+
+.btn .btn-primary {
+    color: var(--white);
+    background-color: var(--blue-darkest);
+}
+
+.btn .btn-secondary {
+    color: var(--blue-darkest);
+    border: 2px solid var(--blue-darkest);
+}
+
+.btn .btn-secondary:hover {
+    color: var(--white);
+    background-color: var(--blue-darkest);
 }
