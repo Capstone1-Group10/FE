@@ -218,16 +218,22 @@ p {
 .course-second .course-second-1 {
     background: #F1F8FF;
     border-radius: 10px 10px 0 0;
-    padding: 30px 50px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.30);;
+    padding: 40px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
 }
 
 .course-second .course-second-1 h2 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+.course-second .course-second-1 p {
+    line-height: normal;
 }
 
 .progress {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -240,6 +246,7 @@ p {
 .course-second .course-second-2 li {
     display: flex;
     align-items: center;
+    margin-top: 20px;
 
 }
 
@@ -247,7 +254,7 @@ p {
     margin-right: 10px;
 }
 
-.btn {
+.btn-progress {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -257,17 +264,20 @@ p {
     font-family: 'Nunito', sans-serif;
     width: 280px;
     height: 35px;
-    border-radius: 10px;
+    border-radius: 5px;
+    background-color: transparent;
     border: 0;
     outline: none;
     transition: 0.3s;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.btn-progress .btn-primary-progress {
     color: #fff;
     background-color: #4D57DD;
 }
-
-.btn:hover {
+.btn-progress .btn-primary-progress:hover {
     color: #4D57DD;
     background: #fff;
     border: 1px solid #4D57DD;

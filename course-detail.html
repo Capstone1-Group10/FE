@@ -9,11 +9,42 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/course-detail.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>ELEANIFY</title>
 </head>
 
 <body>
     <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-main">
+                    <img src="./image/logo2.png" alt="">
+                    <div class="header-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" class="header-search-input" placeholder="Tìm kiếm">
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Trang Chủ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Khóa Học</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Luyện Đề</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Blog</a>
+                        </li>
+                        <li class="btn">
+                            <a href="#" class="btn btn-secondary">Đăng Nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
         <main>
             <div class="container">
                 <div class="course-detail-main">
@@ -314,8 +345,8 @@
                                 <p>20% Hoàn Thành</p>
                             </div>
                             <div class="progress-line"></div>
-                            <div class="btn">
-                                <a href="#" class="btn btn-primary">Tiếp tục học</a>
+                            <div class="btn-progress">
+                                <a href="#" class="btn-progress btn-primary-progress">Tiếp tục học</a>
                             </div>
                             <p>Bạn đã đăng ký khóa học này vào ngày 14 tháng 02 năm 2024</p>
                         </div>
@@ -343,6 +374,45 @@
                 </div>
             </div>
         </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-main">
+                    <div class="footer-col">
+                        <img src="./image/logofooter.png" alt="">
+                        <div class="social-link">
+                            <a href="#"><i class="fa-brands fa-google"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Về chúng tôi</h4>
+                        <ul>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Điều khoản</a></li>
+                            <li><a href="#">Bảo mật</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Liên hệ với chúng tôi</h4>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+123.456.789</span>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>elearnify@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Số nhà 123, đường xyz, phường Hòa Khánh Nam, quận Liên Chiểu, thành phố Đà Nẵng.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 <script src="./js/course-detail.js"></script>
