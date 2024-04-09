@@ -86,11 +86,12 @@
     font-family: var(--primary-font);
     height: 35px;
     padding: 0 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: transparent;
     border: 0;
     outline: none;
-    transition: 0.3s;
+    border: 2px solid var(--white);
+    transition: all 0.3s ease;
 }
 
 .btn .btn-primary {
@@ -98,6 +99,11 @@
     background-color: var(--blue-darkest);
 }
 
+.btn .btn-primary:hover{
+    color: var(--blue-darkest);
+    background-color: #fff;
+    border: 2px solid var(--blue-darkest);
+}
 .btn .btn-secondary {
     color: var(--blue-darkest);
     border: 2px solid var(--blue-darkest);

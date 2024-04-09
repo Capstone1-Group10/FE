@@ -1,0 +1,154 @@
+@import 'reset.css';
+@import 'global.css';
+@import 'variables.css';
+
+.account-info-main {
+    margin: 75px 255px;
+    display: flex;
+    justify-content: center;
+    height: 650px;
+}
+
+.account-tab {
+    max-width: 650px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.account-tab nav {
+    position: relative;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.account-tab nav::after {
+    content: "";
+    background: #000;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 48px;
+}
+
+.account-tab nav label {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+#account:checked~nav label .account,
+#pass:checked~nav label .pass {
+    color: #4D57DD;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.account-tab nav .slider {
+    position: absolute;
+    height: 3px;
+    background-color: #4D57DD;
+    border-radius: 20px;
+    width: 50%;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    transition: all .3s ease;
+}
+
+#account:checked~nav .slider {
+    left: 0%;
+}
+
+#pass:checked~nav .slider {
+    left: 50%;
+}
+
+#account:checked~nav .account {
+    color: #4D57DD;
+}
+
+#pass:checked~nav .pass {
+    color: #4D57DD;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+section .account-content {
+    display: none;
+    width: 650px;
+}
+
+section .account-content .title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px 0 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#account:checked~section .account-content-1 {
+    display: block;
+}
+
+#pass:checked~section .account-content-2 {
+    display: block;
+}
+
+.account-content .account-form ul li {
+    margin-bottom: 20px;
+}
+
+section .account-content .avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.account-content .account-form ul li p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.account-content .account-form ul li input {
+    margin-top: 10px;
+    width: 650px;
+    height: 30px;
+}
+
+.account-content .account-form .day-of-birth {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.account-content .account-form select {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000;
+}
+
+.btn .btn-primary {
+    display: flex;
+}

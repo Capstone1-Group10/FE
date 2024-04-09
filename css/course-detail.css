@@ -258,19 +258,16 @@ p {
     width: 280px;
     height: 35px;
     border-radius: 10px;
-    background-color: transparent;
     border: 0;
     outline: none;
     transition: 0.3s;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.btn .btn-primary {
     color: #fff;
     background-color: #4D57DD;
 }
-.btn .btn-primary:hover {
+
+.btn:hover {
     color: #4D57DD;
     background: #fff;
     border: 1px solid #4D57DD;
