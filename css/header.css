@@ -31,7 +31,7 @@
     width: 260px;
     height: 35px;
     border: 2px solid var(--gray);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header-search i {
@@ -101,7 +101,7 @@
 
 .btn .btn-primary:hover{
     color: var(--blue-darkest);
-    background-color: #fff;
+    background-color: var(--white);
     border: 2px solid var(--blue-darkest);
 }
 .btn .btn-secondary {

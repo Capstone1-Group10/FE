@@ -3,7 +3,7 @@
 @import url("./variables.css");
 
 .footer {
-    background: #222222;
+    background: var(--black);
     padding: 50px 0 100px;
 }
 
@@ -19,7 +19,7 @@
 
 .footer-col h4 {
     font-size: 20px;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 20px;
     font-weight: 700;
     position: relative;
@@ -31,17 +31,17 @@
     line-height: 2;
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: var(--white);
     display: block;
 }
 
 .footer-col ul li a {
-    color: #fff;
+    color: var(--white);
     transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #fff;
+    color: var(--white);
     padding-left: 6px;
 }
 
@@ -64,16 +64,16 @@
     display: inline-block;
     height: 40px;
     width: 40px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #fff;
+    color: var(--white);
     transition: all .3s ease;
 }
 
 .footer-col .social-link a:hover {
-    color: #222222;
-    background: #fff;
+    color: var(--black);
+    background: var(--white);
 }

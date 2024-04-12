@@ -1,0 +1,85 @@
+@import url("./reset.css");
+@import url("./global.css");
+@import url("./variables.css");
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    height: 35px;
+    padding: 0 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border: 2px solid var(--white);
+    transition: all 0.3s ease;
+}
+
+.btn .btn-primary {
+    color: var(--white);
+    background-color: var(--blue-darkest);
+}
+
+.btn .btn-primary:hover{
+    color: var(--blue-darkest);
+    background-color: var(--white);
+    border: 2px solid var(--blue-darkest);
+}
+.btn .btn-secondary {
+    color: var(--blue-darkest);
+    border: 2px solid var(--blue-darkest);
+}
+
+.btn .btn-secondary:hover {
+    color: var(--white);
+    background-color: var(--blue-darkest);
+}
+
+.btn .btn-banner-primary {
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    height: 50px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--blue-darkest);
+    transform: scale(.9);
+    position: relative;
+    z-index: 1;
+}
+
+.btn .btn-banner-primary:hover {
+    transform: scale(1);
+}
+
+.btn .btn-banner-secondary {
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 20px;
+    color: var(--blue-darkest);
+    border: 2px solid var(--blue-darkest);
+    font-weight: 600;
+    transform: scale(.9);
+    position: relative;
+    z-index: 1;
+}
+
+.btn .btn-banner-secondary:hover {
+    transform: scale(1);
+}
+
+.btn .btn-banner-secondary i {
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.btn .btn-banner-secondary:hover i {
+    transform: translateX(7px);
+}

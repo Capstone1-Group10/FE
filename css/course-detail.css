@@ -19,11 +19,11 @@
 }
 
 .course-primary .course-rate .rate-star {
-    color: #EC7070;
+    color: var(--pink);
 }
 
 .course-primary .course-rate p {
-    color: rgba(0, 0, 0, 0.40);
+    color: var(--gray);
 }
 
 .course-primary .course-info {
@@ -48,10 +48,15 @@
     max-width: 700px;
     margin-top: 10px;
 }
+.course-form h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
 
 .course-label {
     padding: 10px 20px;
     cursor: pointer;
+    border-bottom: 2px solid var(--white);
 }
 
 .course-radio {
@@ -60,8 +65,8 @@
 
 .course-radio:checked+.course-label {
     font-weight: 600;
-    color: #4D57DD;
-    border-bottom: 1px solid #4D57DD;
+    color: var(--blue-darkest);
+    border-bottom: 2px solid var(--blue-darkest);
     transition: all 0.4s ease;
 
 }
@@ -73,7 +78,7 @@
 .course-content {
     order: 1;
     width: 100%;
-    border-bottom: 2px solid #fff;
+    border-bottom: 22px solid var(--white);
     line-height: 1.5;
     font-size: 16px;
     display: none;
@@ -114,7 +119,7 @@ p {
     display: inline-block;
     cursor: pointer;
     font-style: italic;
-    color: #4D57DD;
+    color: var(--blue-darkest);
 
 }
 
@@ -139,9 +144,9 @@ p {
 .accordion-menu-lesson {
     max-width: 700px;
     height: auto;
-    background: #F1F8FF;
+    background: var(--light-blue);
     border-radius: 10px;
-    border: 2px solid #D9D9D9;
+    border: 2px solid var(--white-darkest);
     overflow: hidden;
     margin: 10px 0;
 }
@@ -156,14 +161,14 @@ p {
     padding: 15px 30px;
     font-size: 20px;
     font-weight: 600;
-    color: #000;
+    color: var(--black);
     position: relative;
     transition: all 0.3s ease-out;
 }
 
 .course-dropdown:hover {
-    background: #4D57DD;
-    color: #fff;
+    background: var(--blue-darkest);
+    color: var(--white);
 }
 
 .course-dropdown .fa-chevron-down {
@@ -172,9 +177,9 @@ p {
     left: auto;
 }
 .submenuItems {
-    border-top: 2px solid #D9D9D9;
+    border-top: 2px solid var(--white-darkest);
     display: none;
-    background: #fff;
+    background: var(--white);
     /* transition: all 2s ease-in-out; */
 }
 
@@ -184,7 +189,7 @@ p {
 }
 
 .submenuItems a:hover {
-    background: #F1F8FF;
+    background: var(--light-blue);
   }
 
 .accordion-menu-lesson li.active .submenuItems {
@@ -193,7 +198,7 @@ p {
 .accordion-menu-lesson a {
     display: flex;
     align-items: center;
-    color: #000;
+    color: var(--black);
     font-weight: 400;
     padding: 5px 20px;
     transition: all .2s ease-in-out;
@@ -212,14 +217,14 @@ p {
     max-width: 380px;
     height: 460px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.30);
+    border: 1px solid var(--gray);
 }
 
 .course-second .course-second-1 {
-    background: #F1F8FF;
+    background: var(--light-blue);
     border-radius: 10px 10px 0 0;
     padding: 40px 50px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    border-bottom: 1px solid var(--gray);
 }
 
 .course-second .course-second-1 h2 {
@@ -237,7 +242,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--black);
 }
 .course-second .course-second-2 {
     padding: 10px 50px;
@@ -261,7 +266,7 @@ p {
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--primary-font);
     width: 280px;
     height: 35px;
     border-radius: 5px;
@@ -274,11 +279,13 @@ p {
 }
 
 .btn-progress .btn-primary-progress {
-    color: #fff;
-    background-color: #4D57DD;
+    color: var(--white);
+    background-color: var(--blue-darkest);
+    border: 2px solid var(--light-blue);
+
 }
 .btn-progress .btn-primary-progress:hover {
-    color: #4D57DD;
-    background: #fff;
-    border: 1px solid #4D57DD;
+    color: var(--blue-darkest);
+    background: var(--white);
+    border: 2px solid var(--blue-darkest);
 }
